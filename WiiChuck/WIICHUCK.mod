@@ -1,0 +1,136 @@
+PCBNEW-LibModule-V1  
+# encoding utf-8
+Units mm
+$INDEX
+CHUCK
+CHUCK-OUTIE
+$EndINDEX
+$MODULE CHUCK
+Po 0 0 0 15 00000000 00000000 ~~
+Li CHUCK
+Cd 
+Sc 00000000
+At SMD
+Op 0 0 0
+.SolderMask 0
+.SolderPaste 0
+T0 0 0 1 0.9 0 0.05 N H 21 "CHUCK"
+T1 0 0 1 0.9 0 0.05 N H 21 "VAL**"
+DA -0.3 -3 -0.3 -3.3 900 0.127 27
+DS -0.3 -3.3 -8.45 -3.3 0.127 27
+DS -8.45 -3.3 -8.45 -6.2 0.127 27
+DS -8.45 -6.2 -5.358 -6.2 0.127 27
+DS -3.242 -6.2 0 -6.2 0.127 27
+DS 0 -6.2 0 -6.45 0.127 27
+DS 0 -3 0 3 0.127 27
+DA -0.3 3 -0.3 3.3 -900 0.127 27
+DS -0.3 3.3 -8.45 3.3 0.127 27
+DS -8.45 3.3 -8.45 6.2 0.127 27
+DS 0 6.2 0 6.45 0.127 27
+DS -3.242 -6.2 -3.242 -7.3 0.127 27
+DS -3.242 -7.3 -5.358 -7.3 0.127 27
+DS -5.358 -7.3 -5.358 -6.2 0.127 27
+DS -3.242 7.3 -3.242 6.2 0.127 27
+DS -5.358 6.2 -5.358 7.3 0.127 27
+DS -5.358 7.3 -3.242 7.3 0.127 27
+DS -8.45 6.2 -5.358 6.2 0.127 27
+DS -3.242 6.2 0 6.2 0.127 27
+$PAD
+Sh "CLK" R 8 1.88 0 0 0
+At SMD N 00888000
+.SolderMask 0
+.SolderPaste 0
+Ne 0 ""
+Po -4.25 -2.255
+$EndPAD
+$PAD
+Sh "GND" R 8 1.88 0 0 0
+At SMD N 00888000
+.SolderMask 0
+.SolderPaste 0
+Ne 0 ""
+Po -4.25 2.255
+$EndPAD
+$PAD
+Sh "DAT" R 8 1.88 0 0 0
+At SMD N 00880001
+.SolderMask 0
+.SolderPaste 0
+Ne 0 ""
+Po -4.25 2.255
+$EndPAD
+$PAD
+Sh "ATT" R 8 1.88 0 0 0
+At SMD N 00880001
+.SolderMask 0
+.SolderPaste 0
+Ne 0 ""
+Po -4.25 0
+$EndPAD
+$PAD
+Sh "PWR" R 8 1.88 0 0 0
+At SMD N 00880001
+.SolderMask 0
+.SolderPaste 0
+Ne 0 ""
+Po -4.25 -2.255
+$EndPAD
+$EndMODULE CHUCK
+$MODULE CHUCK-OUTIE
+Po 0 0 0 15 00000000 00000000 ~~
+Li CHUCK-OUTIE
+Cd 
+Sc 00000000
+At SMD
+Op 0 0 0
+.SolderMask 0
+.SolderPaste 0
+T0 0 0 1 0.9 0 0.05 N H 21 "CHUCK-OUTIE"
+T1 0 0 1 0.9 0 0.05 N H 21 "VAL**"
+DS 8.45 0 8.45 -3 0.127 27
+DA 8.15 -3 8.15 -3.3 900 0.127 27
+DS 8.15 -3.3 0 -3.3 0.127 27
+DS 8.45 0 8.45 3 0.127 27
+DA 8.15 3 8.15 3.3 -900 0.127 27
+DS 8.15 3.3 0 3.3 0.127 27
+$PAD
+Sh "CLK" R 8 1.88 0 0 0
+At SMD N 00888000
+.SolderMask 0
+.SolderPaste 0
+Ne 0 ""
+Po 4.2 -2.255
+$EndPAD
+$PAD
+Sh "GND" R 8 1.88 0 0 0
+At SMD N 00888000
+.SolderMask 0
+.SolderPaste 0
+Ne 0 ""
+Po 4.2 2.255
+$EndPAD
+$PAD
+Sh "DAT" R 8 1.88 0 0 0
+At SMD N 00880001
+.SolderMask 0
+.SolderPaste 0
+Ne 0 ""
+Po 4.2 2.255
+$EndPAD
+$PAD
+Sh "ATT" R 8 1.88 0 0 0
+At SMD N 00880001
+.SolderMask 0
+.SolderPaste 0
+Ne 0 ""
+Po 4.2 0
+$EndPAD
+$PAD
+Sh "PWR" R 8 1.88 0 0 0
+At SMD N 00880001
+.SolderMask 0
+.SolderPaste 0
+Ne 0 ""
+Po 4.2 -2.255
+$EndPAD
+$EndMODULE CHUCK-OUTIE
