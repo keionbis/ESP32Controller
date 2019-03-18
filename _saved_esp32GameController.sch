@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:esp32GameController-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
@@ -629,17 +630,6 @@ F 3 "" H 5800 2250 50  0001 C CNN
 $EndComp
 Connection ~ 5800 2250
 $Comp
-L Transistor_BJT:2N2219 Q2
-U 1 1 5C8E7434
-P 10650 2950
-F 0 "Q2" H 10841 2996 50  0000 L CNN
-F 1 "2N2219" H 10841 2905 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 10850 2875 50  0001 L CIN
-F 3 "http://www.onsemi.com/pub_link/Collateral/2N2219-D.PDF" H 10650 2950 50  0001 L CNN
-	1    10650 2950
-	1    0    0    -1  
-$EndComp
-$Comp
 L Connector_Generic:Conn_02x06_Odd_Even J3
 U 1 1 5C8E861B
 P 9100 1200
@@ -725,23 +715,34 @@ Wire Wire Line
 Wire Wire Line
 	10750 2700 10750 2750
 Connection ~ 10150 2300
-$Comp
-L Transistor_BJT:2N2219 Q1
-U 1 1 5C8E73F2
-P 10650 2300
-F 0 "Q1" H 10841 2346 50  0000 L CNN
-F 1 "2N2219" H 10841 2255 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 10850 2225 50  0001 L CIN
-F 3 "http://www.onsemi.com/pub_link/Collateral/2N2219-D.PDF" H 10650 2300 50  0001 L CNN
-	1    10650 2300
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	10750 2600 10750 2500
 Wire Wire Line
 	10100 2600 10750 2600
 Text GLabel 10750 3150 3    50   Input ~ 0
 IO0
 Text GLabel 7750 2550 2    50   Input ~ 0
 IO0
+Wire Wire Line
+	10750 2500 10750 2600
+$Comp
+L Transistor_BJT:2N3055 Q1
+U 1 1 5C8FA7AB
+P 10650 2300
+F 0 "Q1" H 10841 2346 50  0000 L CNN
+F 1 "2N3055" H 10841 2255 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 10850 2225 50  0001 L CIN
+F 3 "http://www.onsemi.com/pub_link/Collateral/2N3055-D.PDF" H 10650 2300 50  0001 L CNN
+	1    10650 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_BJT:2N3055 Q2
+U 1 1 5C8FB335
+P 10650 2950
+F 0 "Q2" H 10841 2996 50  0000 L CNN
+F 1 "2N3055" H 10841 2905 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 10850 2875 50  0001 L CIN
+F 3 "http://www.onsemi.com/pub_link/Collateral/2N3055-D.PDF" H 10650 2950 50  0001 L CNN
+	1    10650 2950
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
